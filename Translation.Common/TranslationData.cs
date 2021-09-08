@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Translation.Common
 {
+    /// <summary>
+    /// A simple class containing the necessary parameters to perform a translation
+    /// </summary>
     public class TranslationData
     {
         /// <summary>

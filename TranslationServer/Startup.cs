@@ -8,6 +8,7 @@ using System;
 
 namespace TranslationServer
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -82,4 +83,6 @@ namespace TranslationServer
             services.AddSwaggerGenNewtonsoftSupport();
         }
     }
+
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

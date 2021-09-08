@@ -6,9 +6,15 @@ using TranslationServer.GoogleTranslate;
 
 namespace Test.TranslationServer.GoogleTranslate
 {
+    /// <summary>
+    /// A test class that contains tests for the <see cref="TranslationService"/>
+    /// </summary>
     [TestClass]
     public class TranslationServiceTests
     {
+        /// <summary>
+        /// Test the <see cref="TranslationService.GetTranslatedTextAsync(TranslationData)"/>
+        /// </summary>
         [TestMethod]
         public void GetTranslatedTextAsync_Test()
         {
@@ -28,6 +34,9 @@ namespace Test.TranslationServer.GoogleTranslate
         }
 
 
+        /// <summary>
+        /// Test the <see cref="TranslationService.GetTranslatedTextAsync(TranslationData)"/> with auto detect function
+        /// </summary>
         [TestMethod]
         public void GetTranslatedTextAsync_AutoDetectFromLanguage_Test()
         {
@@ -49,6 +58,9 @@ namespace Test.TranslationServer.GoogleTranslate
         }
 
 
+        /// <summary>
+        /// Test the <see cref="TranslationService.GetTranslatedSentencesAsync(TranslationData)"/>
+        /// </summary>
         [TestMethod]
         public void GetTranslatedSentencesAsync_Test()
         {
@@ -68,6 +80,9 @@ namespace Test.TranslationServer.GoogleTranslate
         }
 
 
+        /// <summary>
+        /// Test the <see cref="TranslationService.GetTranslatedSentencesAsync(TranslationData)"/> with auto detect function
+        /// </summary>
         [TestMethod]
         public void GetTranslatedSentencesAsync_AutoDetectFromLanguage_Test()
         {

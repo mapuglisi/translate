@@ -3,6 +3,8 @@ using Microsoft.Extensions.Hosting;
 
 namespace TranslationServer
 {
+
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public class Program
     {
         public static void Main(string[] args)
@@ -18,4 +20,5 @@ namespace TranslationServer
                     webBuilder.UseStartup<Startup>();
                 });
     }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }
