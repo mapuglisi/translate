@@ -28,7 +28,7 @@ namespace TranslationServer.Controllers
             var translation = TranslationService.GetTranslatedSentencesAsync(translationData).Result;
 
             //  TODO: Add language verification
-            //  Return 400 when source text doesn't match the provided text?
+            //  Return 400 when source language doesn't match the provided text language?
             
             return Ok(translation);
         }
@@ -47,7 +47,7 @@ namespace TranslationServer.Controllers
             var translation = TranslationService.GetTranslatedTextAsync(translationData).Result;
 
             //  TODO: Add language verification
-            //  Return 400 when source text doesn't match the provided text?
+            //  Return 400 when source language doesn't match the provided text language?
 
             return Ok(translation);
         }
