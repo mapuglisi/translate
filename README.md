@@ -1,22 +1,40 @@
-# Simple Translation Server
+# Translation Server
 
 **Simple Translation** is a machine translation tool that can translate sentences between 3 popular languages (English, German and French).
 
-This server was built using C# and provides a REST API with an endpoint to translate text between English, German and French, using an external translation library [link] based on Google Translate API (unofficial).
+This server was built using C# and provides a REST API with an endpoint to translate text between English, German and French, which encapsulates the usage of an [external translation library](https://www.nuget.org/packages/Wadereye.GoogleTranslateFreeApi/) based on Google Translate API (unofficial).
 
-The documentation for this application is expose [here]
+
 
 
 ## Installation
 
-Donwload the code from [repository]
+Download the code from [repository](https://github.com/mapuglisi/translate-server.git)
 
-Set the server folder and start the application within the docker container
+You can run this project by using the command `dotnet run` while in the code folder.
+
+
+
+## Docker
+
+Build the server image by using the following command:
 
 ```bash
-docker compose / docker app init????
+docker build -t translation-server:v1 .
 ```
-The server will be running on [link]
+Then run the image in a container
+
+```bash
+docker run -it --rm -p 8090:80 translation-server:v1
+```
+
+
+
+## Usage
+
+The server will be running on [localhost:8090](http://localhost:8090/swagger/index.html)
+
+![Server](https://raw.githubusercontent.com/mapuglisi/translate-server/main/Server.png)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
