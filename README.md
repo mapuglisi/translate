@@ -11,7 +11,7 @@ This server was built using C# and provides a REST API with an endpoint to trans
 
 Download the code from [repository](https://github.com/mapuglisi/translate-server.git)
 
-You can run this project by using the command `dotnet run` while in the code folder.
+You can run this project by using the command `dotnet run` while in the code folder, as long as you have the .NET SDK available in your machine.
 
 
 
