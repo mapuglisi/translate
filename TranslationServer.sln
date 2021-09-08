@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslationServer", "TranslationServer\TranslationServer.csproj", "{26A9CF23-792C-4648-80A5-62985F28DE6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - API", "1 - API", "{21904873-2D59-41CB-921D-68AB0308CBC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Business", "2 - Business", "{B83D51E4-B651-472D-919C-A85BEBAF477E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - UnitTests", "3 - UnitTests", "{625B74A7-A441-4C88-8A7F-B771FC319859}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslationServer.GoogleTranslate", "TranslationServer.GoogleTranslate\TranslationServer.GoogleTranslate.csproj", "{0E7E0285-89BC-4F05-B68B-269E15A8A879}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.TranslationServer.GoogleTranslate", "Test.TranslationServer.GoogleTranslate\Test.TranslationServer.GoogleTranslate.csproj", "{4B74DE3F-0489-4EFD-86F2-93943832CD6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Common", "4 - Common", "{1ACCC892-1BC5-427B-A6CB-79706EA7A0AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translation.Common", "Translation.Common\Translation.Common.csproj", "{2B38901E-8DB8-4C36-BF20-0B4513E9DE36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1787DA16-8F20-421C-B084-B9EC72DE69E4}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26A9CF23-792C-4648-80A5-62985F28DE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A9CF23-792C-4648-80A5-62985F28DE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A9CF23-792C-4648-80A5-62985F28DE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A9CF23-792C-4648-80A5-62985F28DE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7E0285-89BC-4F05-B68B-269E15A8A879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7E0285-89BC-4F05-B68B-269E15A8A879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7E0285-89BC-4F05-B68B-269E15A8A879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7E0285-89BC-4F05-B68B-269E15A8A879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B74DE3F-0489-4EFD-86F2-93943832CD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B74DE3F-0489-4EFD-86F2-93943832CD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B74DE3F-0489-4EFD-86F2-93943832CD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B74DE3F-0489-4EFD-86F2-93943832CD6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B38901E-8DB8-4C36-BF20-0B4513E9DE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B38901E-8DB8-4C36-BF20-0B4513E9DE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B38901E-8DB8-4C36-BF20-0B4513E9DE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B38901E-8DB8-4C36-BF20-0B4513E9DE36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26A9CF23-792C-4648-80A5-62985F28DE6A} = {21904873-2D59-41CB-921D-68AB0308CBC2}
+		{0E7E0285-89BC-4F05-B68B-269E15A8A879} = {B83D51E4-B651-472D-919C-A85BEBAF477E}
+		{4B74DE3F-0489-4EFD-86F2-93943832CD6E} = {625B74A7-A441-4C88-8A7F-B771FC319859}
+		{2B38901E-8DB8-4C36-BF20-0B4513E9DE36} = {1ACCC892-1BC5-427B-A6CB-79706EA7A0AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85A8C286-E0B6-4B1F-BD4E-ABC0D624FB62}
+	EndGlobalSection
+EndGlobal
