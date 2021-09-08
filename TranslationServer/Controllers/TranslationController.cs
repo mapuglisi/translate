@@ -10,7 +10,7 @@ namespace TranslationServer.Controllers
     /// The translation controller
     /// </summary>
     [ApiController]
-    [Route("api/[controller]")] //    /api/Translation 
+    [Route("api/[controller]")]
     public class TranslationController : Controller
     {
         
@@ -45,6 +45,9 @@ namespace TranslationServer.Controllers
         public IActionResult TranslateText(TranslationData translationData)
         {
             var translation = TranslationService.GetTranslatedTextAsync(translationData).Result;
+
+            //  TODO: Add language verification
+            //  Return 400 when source text doesn't match the provided text?
 
             return Ok(translation);
         }

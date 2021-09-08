@@ -16,6 +16,7 @@ namespace TranslationServer
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    //  Listen locally at port 80
                     webBuilder.UseUrls("http://*:80");
                     webBuilder.UseStartup<Startup>();
                 });

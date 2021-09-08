@@ -29,6 +29,7 @@ namespace TranslationServer
 
             services.AddCors(options =>
             {
+                //  For debug reasons, when in production this should be handled in a better manner
                 options.AddPolicy("Open", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             });
         }
@@ -41,6 +42,8 @@ namespace TranslationServer
                 app.UseDeveloperExceptionPage();
             }
 
+            // Removing https redirections due to localhost implementation
+            // Once in a production environment with real signed certificates this can be used again
             //app.UseHttpsRedirection();
 
             app.UseSwagger();
@@ -53,6 +56,7 @@ namespace TranslationServer
 
             app.UseAuthorization();
 
+            // Due to local implementation using http, allow CORS, In production implementation this should change 
             app.UseCors("Open");
 
             app.UseEndpoints(endpoints =>
